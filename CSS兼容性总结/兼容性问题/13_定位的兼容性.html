@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				/*父级宽高出现奇数，ie下偏差1px*/
+				width: 307px;
+				height: 307px;
+				background-color: red;
+				position: absolute;
+			}
+			.content{
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		</style>
+		<!--
+			IE6下绝对定位元素父级宽高是奇数,绝对定位元素的right和bottom值会有1px的偏差
+			解决方案：
+				避免父级宽高出现奇数
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<div class="content"></div>
+		</div>
+	</body>
+</html>

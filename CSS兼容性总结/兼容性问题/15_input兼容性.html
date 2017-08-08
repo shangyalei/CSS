@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				width: 200px;
+				border: 1px solid #000000;
+				background-color: red;
+			}
+			.box input{
+				border: 0;
+				margin: 0;
+				width: 200px;
+				height: 30px;
+				background-color: #fff;
+				/*解决上下间隙问题*/
+				*float: left;
+			}
+		</style>
+		<!--
+		IE6 下input的空隙
+
+			解决方案：
+				给input元素添加float
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<input type="text" />
+		</div>
+	</body>
+</html>

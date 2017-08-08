@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				width: 200px;
+				height: 200px;
+				border: 10px solid #000;
+			}
+			.content{
+				/*大于了父级的宽高，正常情况下，父包不住子级了*/
+				/*但是IE6下，子级把父级给撑开了，竟然给包住了。*/
+				width: 400px;
+				height: 400px;
+				background-color: red;
+			}
+		</style>
+		<!--
+			解决方案：
+			不要让子元素的宽高超过父级
+		-->
+	</head>
+	<body>
+
+	<!--
+		E6下子元素超出父级宽高，会把父级的宽高撑开
+
+
+
+	-->
+
+		<div class="box">
+			<div class="content"></div>
+		</div>
+	</body>
+</html>

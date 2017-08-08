@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.box{
+				width: 500px;
+			}
+			.left{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				float: left;
+			}
+			.right{
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				/*不建议用margin-left来让们在一起显示*/
+				/*margin-left:200px;*/
+				/*用浮动解决,让它们在一行显示*/
+				float: left;
+			}
+		</style>
+		<!--
+			解决方案：
+				1、不建议这么写
+				2、用浮动解决
+		-->
+	</head>
+
+	<!--
+
+	第一块元素浮动,
+	第二块元素加margin值
+	加的margin值等于第一块元素的width,这样他们就在一行显示了,
+	但是在IE6下会它们之间会有间隙问题;
+
+	-->
+
+	<body>
+		<div class="box">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+	</body>
+</html>

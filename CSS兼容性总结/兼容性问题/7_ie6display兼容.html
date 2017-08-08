@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				/*使块级元素具有内联元素的特性		注意别忘了包括换行被解析*/
+				/*ie6写display:inline-block没反应*/
+				display: inline-block;
+				/*如何让IE6兼容display:inline-block*/
+				/*用*号加下面两句话*/
+				*display:inline;
+				*zoom:1;
+			}
+		</style>
+		<!--
+			display:inline-block;兼容性问题
+			解决方案：
+				*display:inline;
+				*zoom:1;
+		-->
+	</head>
+	<body>
+		<div>div</div>
+		<div>div</div>
+		<div>div</div>
+	</body>
+</html>
