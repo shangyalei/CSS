@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .container{
+            display: block;
+            width: 300px;
+            height: 300px;
+            background: #00ffbb;
+            position: relative;
+            margin: 200px auto;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 300px;
+            left: 0;
+            background-color: #aa00ff;
+            /*display: none;*/
+            opacity: 0;
+        }
+        .container:hover .box{
+            /*display: block;*/
+            opacity: 1;
+            top: 0;
+            transition: all .3s linear 0s;
+            /*all 所有要变化的css属性 .3s 运动的时间 linear 运动的方式  0s 延迟时间 时间必须加单位 display 隐藏的元素 没有办法使用这个属性*/
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<a class="container">
+    <p>hello world</p>
+    <div class="box"></div>
+</a>
+
+
+
+
+
+</body>
+</html>

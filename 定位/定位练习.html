@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            width: 448px;
+            height: 252px;
+            position: relative;
+            margin: 50px auto;
+            border:1px solid blue;
+        }
+        .info{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color:#fff;
+            font-size:14px;
+            font-weight:bold;
+            padding:5px;
+            background:rgba(0,0,0,.5);
+        }
+
+        .layer{
+            position: absolute;
+            /*width: 448px;
+            height: 252px;*/
+            /*top: 0;*/
+            /*left: 0;*/
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background:rgba(0,0,0,.5);
+            color:#fff;
+            /*padding大于10px的时候有的浏览器已经不支持了*/
+            padding:6px;
+            display: none;
+        }
+        h3{
+            font-size:14px;
+            line-height:20px;
+        }
+        .container:hover .layer{
+            display:block;
+        }
+        .layer p{
+            font-size:12px;
+            color:#ccc;
+            line-height:20px;
+        }
+        .layer span{
+            padding:6px 10px;
+            color:#fff;
+            background:skyblue;
+
+        }
+        .last-p{
+            margin-bottom:10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="../images/activer.jpg" alt="">
+    <p class="info">[金星秀]金姐霸气控诉谣言者</p>
+    <div class="layer">
+        <h3>[金星秀]金姐霸气控诉谣言者</h3>
+        <p>大叔鲜肉争相献爱</p>
+        <p class="last-p">198万次播放 637次评论</p>
+        <span>立即播放</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

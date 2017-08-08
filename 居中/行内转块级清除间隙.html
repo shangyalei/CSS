@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            font-size:0;
+        }
+        .box1,.box2,.box3,.box4{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+<!--
+display：inline-block的元素之间会有一个字符的间隙，这个间隙导致了最后一个会掉下来。
+
+解决方法：
+1、给父元素设置font-size：0px；
+2、取消掉换行符，如这样：<span>aaaa</span><span>aaaa</span><span>aaaa</span>连续。
+-->
+
+<div>
+    <span class="box1"></span>
+    <span class="box2"></span>
+    <span class="box3"></span>
+    <span class="box4"></span>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            padding: 100px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li{
+            float: left;
+            height: 30px;
+            margin-right:10px;
+            line-height: 30px;
+            border:1px solid blue;
+        }
+        i{
+            padding: 9px;
+            /*继承了父级的font-size属性，要除掉*/
+            font-size:0;
+            vertical-align: middle;
+        }
+        .demo-1 i,.demo-2 i,.demo-3 i{
+            background:url("../images/cat.png") no-repeat;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+<ul>
+    <li class="demo-1"><i></i>男装</li>
+    <li class="demo-2"><i></i>女装</li>
+    <li class="demo-3"><i></i>内衣</li>
+</ul>
+
+
+
+</body>
+</html>

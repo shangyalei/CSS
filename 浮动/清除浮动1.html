@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .parent{
+            border:1px solid red;
+            /*清除浮动*/
+            overflow: hidden;
+        }
+        .child1{
+            width: 100px;
+            height: 300px;
+            background: blue;
+            float: left;
+        }
+        .child2{
+            width: 400px;
+            height: 500px;
+            background-color:darkcyan;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+
+    第一种情况，父元素无高度，子元素浮动了
+
+    浮动一种特殊的结构，它脱离了正常的文档流,所以父级就不能获取高度了
+    清除浮动的第一种方式就是overflow
+    overflow是针对于父元素的内容有溢出了，而解决这类溢出问题的一个属性，通过overflow：hidden，即可将溢出的部分隐藏掉
+
+
+-->
+
+<div class="parent">
+    <div class="child1"></div>
+    <div class="child2"></div>
+</div>
+
+
+
+</body>
+</html>

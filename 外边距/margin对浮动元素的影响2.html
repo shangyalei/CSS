@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            margin:100px auto;
+            width: 800px;
+            height: 500px;
+            background-color: pink;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+            /*margin-left:-50px;*/
+            float: left;
+        }
+        .box1{
+            background-color: red;
+            margin-left:-50px;
+        }
+        .box2{
+            background-color: blue;
+            margin-left:-50px;
+        }
+        .container .box3{
+            background-color: darkcyan;
+            margin-left:0;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    脱离文档流 的 浮动流
+
+    浮动的元素，后面的元素会都受到
+    前面的元素的margin值的影响，
+    影响的值是前面所有元素的margin的值的总和
+-->
+
+<div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+</body>
+</html>

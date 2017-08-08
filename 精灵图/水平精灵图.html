@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        i{
+            /*要使用水平精灵图，盒子宽要和每一个图标的宽度相等*/
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            /*想获取第二张精灵图，为什么坐标是负值，因为把整张图片像左平移*/
+            background:url("images/glory_icon.png") no-repeat -14px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!-- 使用时注意事项：
+     1.容器宽度的临界值是，第二张图片的起始点
+     2.使用时禁止平铺
+     3.水平精灵图，宽度是固定，高度是任意的。
+ -->
+
+
+<div class="box"><i></i>我在使用水平精灵图</div>
+
+</body>
+</html>

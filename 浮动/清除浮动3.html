@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            border:1px solid red;
+        }
+        .box1{
+            width: 100px;
+            height: 300px;
+            background-color: brown;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 500px;
+            background-color: darkcyan;
+            float: left;
+        }
+        .clearFix{
+            zoom:1;
+        }
+        .clearFix:after{
+            content:"";
+            display:block;
+            height: 0;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    伪类清除浮动,添加到有子元素浮动的父元素身上
+
+-->
+
+
+<div class="box clearFix">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

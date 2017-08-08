@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 200px;
+            background-color: blue;
+            /*水平居中*/
+            margin: 50px auto;
+        }
+
+        .box2{
+            position: absolute;
+            /*垂直剧中，这种方式适合任意元素*/
+            top: 50%;
+            height: 300px;
+            margin-top:-150px;
+
+            /*水平剧中*/
+            left: 50%;
+            width: 600px;
+            margin-left:-300px;
+            background-color: green;
+            /*margin:-150px  -300px;*/
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+
+
+
+</body>
+</html>

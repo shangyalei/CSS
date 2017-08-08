@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            /*以最长的一个子div的高度截取*/
+            overflow: hidden;
+        }
+        .box1{
+            width: 33.3%;
+            height: 300px;
+            float: left;
+            background: purple;
+            margin-bottom:-500px;
+            padding-bottom: 500px;
+        }
+        .box2{
+            float: left;
+            width: 33.33%;
+            height: 500px;
+            background-color: greenyellow;
+            /*margin-bottom:-500px;*/
+            /*padding-bottom: 500px;*/
+        }
+        .box3{
+            float: left;
+            width: 33.3%;
+            height: 400px;
+            background-color: lightblue;
+            margin-bottom:-500px;
+            padding-bottom: 500px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<!--
+    圣杯布局，又叫自适应等高布局
+
+    高度是固定的，宽度是自定义的
+
+    为了让盒子自适应，我们需要用百分比布局
+
+    需求
+        三列等高，宽度自适应(使用百分比)   等高自适应，这是它的特点
+
+        1.三个元素在一条直线上，需要用浮动布局
+        2.通过设置盒子的高度，来时使盒子撑开不同的高度
+        3.通过overflow:hidden，来清除浮动的原理，它的切割点是
+        最高盒子的高度。
+        4.把不够高的盒子撑开，撑开的高度是，自身的高度与最高的盒子
+        的差值，设置负的margin-bottom和正的padding-bottom来撑开
+
+-->
+
+<div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+
+
+
+</body>
+</html>

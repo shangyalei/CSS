@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            padding: 100px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li{
+            float: left;
+            height: 30px;
+            margin-right:10px;
+            line-height: 30px;
+        }
+        li:before{
+            content: "";
+            /*伪类生成的元素是inline特性，所有我们需要用padding来让内联元素获取宽高*/
+            padding:8px;
+            background: url("../images/cat.png");
+            font-size:0;
+            /*设置图片居中基线与文字*/
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<ul>
+    <li class="demo-1">男装</li>
+    <li class="demo-2">女装</li>
+    <li class="demo-3">内衣</li>
+</ul>
+
+
+
+
+</body>
+</html>

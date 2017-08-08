@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .container{
+            width: 500px;
+            margin: 0 auto;
+            border:1px solid purple;
+            overflow: hidden;
+        }
+        ul{
+            margin-right: -10px;
+        }
+        li{
+            margin-right:10px;
+            margin-bottom:10px;
+            height: 90px;
+            width: 92px;
+            background-color: darkcyan;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+
+<!--
+    列表布局：需求
+    在一个宽度为500px的容器里，均衡放置5个li元素，
+    并且它们的间距是10px
+    每个盒子的宽度= (容器的宽度-间隔的总宽度)/li的个数
+    ul的margin-right的值等于每个li的margin-right的值
+
+    (500-4*10)/5=92,  可以根据间隔的数来判断每个盒子应该的大小
+
+    公式
+    固定宽度w   固定间距d   元素的个数n    (w-d*(n-1))/n
+
+
+-->
+
+<div class="container">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>

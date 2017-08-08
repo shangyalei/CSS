@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            margin: 100px auto;
+            width: 300px;
+            height: 3px;
+            background-color: blue;
+        }
+        .bot,.top{
+            font-size:0;
+            border-top:20px solid transparent;
+            border-right:20px solid transparent;
+            border-bottom:20px solid blue;
+            border-left:20px solid transparent;
+            position: relative;
+        }
+        .bot{
+            top: -32px;
+            left: 30px;
+        }
+        .top{
+            top: -28px;
+            left: -10px;
+            border-bottom:20px solid white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <span class="bot"></span>
+    <span class="top"></span>
+</div>
+
+
+
+
+
+</body>
+</html>
